@@ -1,0 +1,26 @@
+.page-one-container {
+    width: 100%;
+
+    &-title {
+        padding: 0px 4px;
+        color: #A61D33;
+    }
+
+    &-search {
+        width: 100%;
+        margin: 10px 4px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        .input {
+            width: 80%;
+
+            input {
+                padding: 10px 5px;
+            }
+        }
+
+        button {}
+    }
+}

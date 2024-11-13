@@ -1,0 +1,51 @@
+.page-two-container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+
+    >.title {
+        color: #A61D33;
+    }
+
+    .form-container {
+        &-names {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .first-name,
+            .last-name {
+                width: 300px;
+            }
+        }
+
+        &-workspace {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            width: 70%;
+            margin: 10px 0px;
+
+            .button-workspace {
+                margin: 0;
+                font-size: 14px;
+                text-transform: capitalize;
+                padding: 5px 10px;
+                width: 230px;
+            }
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    }
+
+}
