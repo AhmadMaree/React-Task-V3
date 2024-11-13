@@ -1,4 +1,4 @@
-import { Drawer, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
+import { Drawer, List, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { ERoute, sideBarTitleToolbar } from '../../constant';
 import { sidebarStyles } from './sidebarStyles';
