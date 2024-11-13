@@ -9,7 +9,6 @@ const pageOne = () => {
         onSearch,
         register,
         onPageChange,
-        nav,
 
         columns,
         data,

@@ -30,12 +30,7 @@ const usePageTwo = () => {
     }
 
     const handleCancel = () => {
-        reset({
-            gender: '',
-            birthDate: null,
-            disorders: [],
-            workspaceTemplate: '',
-        });
+        reset();
     };
 
     return {

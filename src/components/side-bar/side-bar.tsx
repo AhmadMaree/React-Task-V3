@@ -1,4 +1,4 @@
-import { Drawer, List, ListItem, ListItemText, Toolbar, Typography } from '@mui/material';
+import { Drawer, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { ERoute, sideBarTitleToolbar } from '../../constant';
 import { sidebarStyles } from './sidebarStyles';
@@ -12,24 +12,22 @@ const Sidebar = () => {
                 </Typography>
             </Toolbar>
             <List>
-                <ListItem
-                    button
+                <ListItemButton
                     component={Link}
                     to={ERoute.PAGE_ONE}
                     selected={location.pathname === ERoute.PAGE_ONE}
                     sx={sidebarStyles.listItem}
                 >
                     <ListItemText primary="Star wars Table" />
-                </ListItem>
-                <ListItem
-                    button
+                </ListItemButton>
+                <ListItemButton
                     component={Link}
                     to={ERoute.PAGE_TWO}
                     selected={location.pathname === ERoute.PAGE_TWO}
                     sx={sidebarStyles.listItem}
                 >
                     <ListItemText primary="Add a patient" />
-                </ListItem>
+                </ListItemButton>
             </List>
         </Drawer>
     )

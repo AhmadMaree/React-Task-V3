@@ -57,7 +57,7 @@ const pageTwo = () => {
                         control={control}
                         render={({ field }) => (
                             <RadioGroup row {...field}>
-                                {GENDER.map((i: { label: string; value: string; }, index: number) => (
+                                {GENDER.map((i: { label: string; value: string; }) => (
                                     <FormControlLabel
                                         key={i.value}
                                         value={i.value}
@@ -96,17 +96,17 @@ const pageTwo = () => {
                         render={({ field }) => (
                             <DatePicker
                                 label="Date of Birth"
+                                className="date-picker"
                                 value={field.value ? new Date(field.value) : null}
                                 onChange={(newValue) => field.onChange(newValue ? newValue.toISOString() : '')}
-                                renderInput={(params: TextFieldProps) => (
-                                    <TextField
-                                        {...params}
-                                        fullWidth
-                                        margin="normal"
-                                        error={!!errors.birthDate}
-                                        helperText={errors.birthDate?.message}
-                                    />
-                                )}
+                                slotProps={{
+                                    textField: {
+                                        fullWidth: true,
+                                        margin: "normal",
+                                        error: !!errors.birthDate,
+                                        helperText: errors.birthDate?.message,
+                                    },
+                                }}
                             />
                         )}
                     />

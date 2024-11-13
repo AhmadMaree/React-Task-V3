@@ -11,8 +11,6 @@ const CustomTable: React.FC<ICustomTableProps> = ({
     isError,
     isLoading,
     pageSizeOptions = [10],
-    title = '',
-    customStyles = {},
     pageSize = 10,
     page = 0,
     onPageChange,
